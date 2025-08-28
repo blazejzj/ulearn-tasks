@@ -1,13 +1,31 @@
 /* Base styling */
 
 * {
-    /* box-sizing: border-box; */
-}
-
-section,
-article {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Variables */
+
 /* Add styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 1rem;
+    box-shadow: 0px 12px 10px -5px lightgray;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+}
