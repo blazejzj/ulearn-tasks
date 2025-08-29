@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* Variables */
 
@@ -28,4 +33,105 @@ h1 {
     font-size: 1.2rem;
     font-weight: 600;
     color: rgb(88, 87, 87);
+}
+
+/* MAIN CONTENT */
+
+.title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.new-task-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+button {
+    place-self: flex-end;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(4, 201, 201);
+}
+button[type="submit"] {
+    padding: 0.5rem 3.5rem;
+    font-size: 1.1rem;
+}
+button[type="button"] {
+    padding: 0.3rem 1rem;
+    margin-top: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 50%;
+    padding: 0.7rem;
+}
+
+textarea {
+    height: 25vh;
+}
+
+input,
+textarea {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    gap: 1rem;
+    box-shadow: 0 4px 12px rgba(2, 182, 182, 0.192);
+    padding: 2rem 1rem;
+}
+
+ul {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+h3 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+p {
+    color: gray;
 }
