@@ -1,10 +1,16 @@
 /* Base styling */
+:root {
+    --main-accent-color: rgb(4, 201, 201);
+    --main-accent-color-hover: rgb(2, 184, 184);
+    --main-accent-color-shadow: rgba(2, 182, 182, 0.192);
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -69,18 +75,26 @@ form {
     flex-direction: column;
     gap: 2rem;
 }
+
 button {
     place-self: flex-end;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    background-color: rgb(4, 201, 201);
+    background-color: var(--main-accent-color);
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: var(--main-accent-color-hover);
+}
+
 button[type="submit"] {
     padding: 0.5rem 3.5rem;
     font-size: 1.1rem;
 }
+
 button[type="button"] {
     padding: 0.3rem 1rem;
     margin-top: 0.5rem;
@@ -98,12 +112,19 @@ input {
 
 textarea {
     height: 25vh;
+    padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--main-accent-color);
 }
 
 input,
 textarea {
     border: 2px solid lightgray;
     border-radius: 5px;
+    outline: none;
 }
 
 .card {
@@ -112,7 +133,7 @@ textarea {
     width: 100%;
     max-width: 350px;
     gap: 1rem;
-    box-shadow: 0 4px 12px rgba(2, 182, 182, 0.192);
+    box-shadow: 0 4px 12px var(--main-accent-color-shadow);
     padding: 2rem 1rem;
 }
 
@@ -128,10 +149,12 @@ ul {
 li {
     list-style: none;
 }
+
 h3 {
     font-weight: bold;
     font-size: 1rem;
 }
+
 p {
     color: gray;
 }
