@@ -109,6 +109,16 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: "#666",
     },
+    containerPressed: {
+        backgroundColor: "#f0f0f0",
+        opacity: 0.9,
+    },
+    inactiveContainer: {
+        opacity: 0.7,
+    },
+    inactiveLabel: {
+        backgroundColor: "#bb583fff",
+    },
 });
 
 export default styles;
